@@ -29,7 +29,7 @@ Interestingly enough, around the date when the original developer, Ricardo, stop
 In the opinion of the authors of this report, the development process of the application, even though it wasn’t structured from the beginning, took advantage of the best part of the open source community. The constant feedback from users and the help of new developers created a structure that was organically put together by the community. This worked well in this specific case as the final result it’s more mature and well structured than the initial prototype.
 
 
-  **Informações**
+## Informações
     
     
       Autores:
