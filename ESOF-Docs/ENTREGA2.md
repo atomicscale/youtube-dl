@@ -47,18 +47,18 @@ As they do explain in their developer oriented [F.A.Q](https://github.com/rg3/yo
 As the software in question started as a side project on [Ricardo Gonzalez](https://github.com/rg3) free time, the specificity of the requirements was very fluid, as it was implied in the previous [chapter](#the-scope).
 Although, there were a few **nonfunctional requirements** well specified in the beginning:
 	
-	* Had to be reliable, always on (more reliable than websites or browser extensions)
-	* Portability through OS's
-	* Interface simplicity
+- Had to be reliable, always on (more reliable than websites or browser extensions)
+- Portability through OS's
+- Interface simplicity
 
 These were the main bullet points behind [Ricardo's](https://github.com/rg3) first draft of the software in terms of quality. Making something that would run locally eliminates the reliability problem as it is always accessible. In order to be portable he wrote it in Python. The first version, which was around 100 lines long, ran virtually in any OS/hardware combination very smoothly. For the front-end he chose the command line as a GUI would be overkill for such a simple task and could harm the growth of Youtube-dl. Only a URL of the Youtube-video was necessary as an argument at the time.
 
 As we write this, many features were added but the same quality principles are being maintained by the development team.
 
 In the beginning of the **requirements engineering process** the only **functional requirements** were:
-	
-	* Download a Youtube video from the URL inserted by the user as an argument.
-	* Playlist transfer capability
+
+- Download a Youtube video from the URL inserted by the user as an argument.
+- Playlist transfer capability
 
 As the process evolved, the main stakeholder group (in this case, end users) increased drastically as stated [before](#the-scope) and with them another set of **features** started to be requested through the issue tracker on github:
 
