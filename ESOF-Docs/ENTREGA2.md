@@ -28,6 +28,15 @@ This was followed by an attempt at **implementation by the developers** themselv
 
 The decision making process about the implementation of new features is now mostly controlled by a couple of developers that maintain a common vision for the project and are mostly focused on implementing **functional requirements**. These functional requirements were born mostly of **brainstorming** sessions and requests from users. We are unsure of the actual step by step process of decision making for this, however we are led to believe they follow a centralized idea and go through very basic processes of **elicitation, analysis and negotiation, specification and validation.**
 
+As they do explain in their developer oriented [F.A.Q](https://github.com/rg3/youtube-dl#developer-instructions) :
+
+> Pull Requests and new Features: Only post features that you (or an incapacitated friend you can personally talk to) require. Do not post features because they seem like a good idea. If they are really useful, they will be requested by someone who requires them.
+
+> Issues and Developers Team: The youtube-dl core developer team is quite small. While we do our best to solve as many issues as possible, sometimes that can take quite a while. To speed up your issue, here's what you can do: First of all, please do report the issue at our issue tracker. That allows us to coordinate all efforts by users and developers, and serves as a unified point.
+
+> User Count and earlier development strategy: Unfortunately, the youtube-dl project has grown too large to use personal email as an effective communication channel.
+
+
 ###Specific Requirements and Features
 
 As the software in question started as a side project on [Ricardo Gonzalez](https://github.com/rg3) free time, the specificity of the requirements was very fluid, as it was implied in the previous [chapter](#the-scope).
