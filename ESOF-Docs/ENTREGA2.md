@@ -51,7 +51,7 @@ Although, there were a few **nonfunctional requirements** well specified in the 
 	* Portability through OS's
 	* Interface simplicity
 
-These were the main bullet points behind [Ricardo's](https://github.com/rg3) first draft of the software in terms of quality. Making something that would run locally eliminates the reliability problem as it is always accessible. In order to be portable he wrote it in Python. The first version, which was around 100 lines long, ran virtually in any OS/hardware combination very smoothly. For the front-end he chose the command line as a GUI would be overkill for such a simple task and could harm the growth of Youtube-dl. Only a URL of the video was necessary as an argument at the time.
+These were the main bullet points behind [Ricardo's](https://github.com/rg3) first draft of the software in terms of quality. Making something that would run locally eliminates the reliability problem as it is always accessible. In order to be portable he wrote it in Python. The first version, which was around 100 lines long, ran virtually in any OS/hardware combination very smoothly. For the front-end he chose the command line as a GUI would be overkill for such a simple task and could harm the growth of Youtube-dl. Only a URL of the Youtube-video was necessary as an argument at the time.
 
 As we write this, many features were added but the same quality principles are being maintained by the development team.
 
@@ -62,7 +62,7 @@ In the beginning of the **requirements engineering process** the only **function
 
 As the process evolved, the main stakeholder group (in this case, end users) increased drastically as stated [before](#the-scope) and with them another set of **features** started to be requested through the issue tracker on github:
 
-	* Support for website X (where X can be one of 700+ websites supported)
+	* Support for website "XYZ" (where X could be one of the 700+ websites now supported)
 	* Video post-processing (quality, metadata, audio)
 	* Website login capable (for websites wich require a user account/ marking videos as seen on Youtube)
 
