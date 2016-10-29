@@ -10,6 +10,11 @@ This report has the goal to explain how the requirements for the project were bo
 
 As stated in the previous **[report](https://github.com/atomicscale/youtube-dl/edit/master/ESOF-Docs/ENTREGA2.md)**, we talked with one of the founding developers, which explained us how the project was born as a very simple script, and how it expanded as soon as the users began requesting new features to be added.
 
+<p align="right">
+    <img src="https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images2/contributions.png" /alt>
+    <em>It's possible to notice the increase in the contributions around the begging of 2013</em>
+</p>
+
 ###The Scope
 
 When we contacted the developers of Youtube-dl, specifically [Ricardo Gonzalez](https://github.com/rg3) one of the very first things he told us was that the initial idea for the project was a very simplistic one with a very simple goal: The ability to download videos from Youtube in a very straightforward fashion. This meant there was no software process model and therefore no prototyping nor requirement elicitation. Although this means our project is a little off to what we study in our Software Engineering lessons, we will shape this very unorganized process into the concepts we are familiarized with.
