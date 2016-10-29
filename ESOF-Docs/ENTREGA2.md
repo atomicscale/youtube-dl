@@ -62,9 +62,9 @@ In the beginning of the **requirements engineering process** the only **function
 
 As the process evolved, the main stakeholder group (in this case, end users) increased drastically as stated [before](#the-scope) and with them another set of **features** started to be requested through the issue tracker on github:
 
-*Support for website "XYZ" (where X could be one of the 700+ websites now supported)
-*Video post-processing (quality, metadata, audio)
-*Website login capable (for websites wich require a user account/ marking videos as seen on Youtube)
+- Support for website "XYZ" (where X could be one of the 700+ websites now supported)
+- Video post-processing (quality, metadata, audio)
+- Website login capable (for websites wich require a user account/ marking videos as seen on Youtube)
 
 With the new development team taking over after [Ricardo](https://github.com/rg3) the analysis and specification of new requirements became easier. Although, to prevent any copyright infringement, the validation process is still strict as the supported website list could enter a gray area in legal terms.
 
