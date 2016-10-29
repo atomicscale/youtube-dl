@@ -60,13 +60,13 @@ In the beginning of the **requirements engineering process** the only **function
 	* Download a Youtube video from the URL inserted by the user as an argument.
 	* Playlist transfer capability
 
-As the process evolved, the main stakeholder group (in this case, end users) icreased drasticly as stated [before](#the-scope) and with them another set of **feutres** started to be requested through the issue tracker on github:
+As the process evolved, the main stakeholder group (in this case, end users) increased drastically as stated [before](#the-scope) and with them another set of **features** started to be requested through the issue tracker on github:
 
-	* Support for website X (where X can be one of many websites now suported)
+	* Support for website X (where X can be one of 700+ websites supported)
 	* Video post-processing (quality, metadata, audio)
 	* Website login capable (for websites wich require a user account/ marking videos as seen on Youtube)
 
-With the new development team taking over after [Ricardo](https://github.com/rg3) the analysis and specification of new requirements became easyer. Although, to prevent any copyright infringement, the validation process is still strict as the supported website list could enter a gray area in legal terms.
+With the new development team taking over after [Ricardo](https://github.com/rg3) the analysis and specification of new requirements became easier. Although, to prevent any copyright infringement, the validation process is still strict as the supported website list could enter a gray area in legal terms.
 
 
 
