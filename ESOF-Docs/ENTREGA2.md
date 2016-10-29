@@ -20,7 +20,7 @@ After Youtube-dl's **user count increased** the developers entered inadvertently
 	<img src="https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images2/issues.png" />
 </p>
 
-This was followed by an attempt at **implementation by the developers** themselves or through the public **pull requests** on github.
+This was followed by an attempt at **implementation by the developers** themselves or through the public **[Pull Requests](https://github.com/rg3/youtube-dl/pulls)** on github.
 
 <p align="center">
 	<img src="https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images2/pullrequests.png" /> 
@@ -50,7 +50,7 @@ As the process evolved, the main stakeholder group (in this case, end users) icr
 
 	* Support for website X (where X can be one of many websites now suported)
 	* Video post-processing (quality, metadata, audio)
-	* Website login capable ( for websites wich require a user account/ marking videos as seen on Youtube )
+	* Website login capable (for websites wich require a user account/ marking videos as seen on Youtube)
 
 With the new development team taking over after [Ricardo](https://github.com/rg3) the analysis and specification of new requirements became easyer. Although, to prevent any copyright infringement, the validation process is still strict as the supported website list could enter a gray area in legal terms.
 
