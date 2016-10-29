@@ -13,7 +13,19 @@ As stated in the previous report our conversation with one of the founding devel
 ###The Scope
 
 When we contacted the developers of Youtube-dl, specifically [Ricardo Gonzalez](https://github.com/rg3) one of the very first things he told us was that the initial idea for the project was a very simplistic one with a very simple goal: The ability to download videos from Youtube in a very straightforward fashion. This meant there was no software process model and therefore no prototyping nor requirement elicitation. Although this means our project is a little off to what we study in our Software Engineering lessons, we will shape this very unorganized process into the concepts we are familiarized with.
-After Youtube-dl's user count increased the developers entered inadvertently into the process of Requirements Engineering. To put it into perspective, we can look at the original idea of **Downloading a video** as the "vaguely defined problem, and then through the **[Issues List](https://github.com/rg3/youtube-dl/issues)** on Github, users began requesting new websites to be added to the software capabilities that would be qualified as the actual "Requirement Engineering", which then was followed by an attempt at **implementation by the developers** themselves or through the public **pull requests** on github. 
+
+After Youtube-dl's **user count increased** the developers entered inadvertently into the process of Requirements Engineering. To put it into perspective, we can look at the original idea of **Downloading a video** as the "vaguely defined problem, and then through the **[Issues List](https://github.com/rg3/youtube-dl/issues)** on Github, users began requesting new websites to be added to the software capabilities that would be qualified as the actual "Requirement Engineering".
+
+<p align="center">
+	<img src="https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images2/issues.png" />
+</p>
+
+This was followed by an attempt at **implementation by the developers** themselves or through the public **pull requests** on github.
+
+<p align="center">
+	<img src="https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images2/pullrequests.png" /> 
+</p>
+
 The decision making process about the implementation of new features is now mostly controlled by a couple of developers that maintain a common vision for the project and are mostly focused on implementing **functional requirements**. These functional requirements were born mostly of **brainstorming** sessions and requests from users. We are unsure of the actual step by step process of decision making for this, however we are led to believe they follow a centralized idea and go through very basic processes of **elicitation, analysis and negotiation, specification and validation.**
 
 ###Specific Requirements and Features
