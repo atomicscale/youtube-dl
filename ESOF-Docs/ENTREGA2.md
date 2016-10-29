@@ -62,7 +62,7 @@ In the beginning of the **requirements engineering process** the only **function
 
 As the process evolved, the main stakeholder group (in this case, end users) increased drastically as stated [before](#the-scope) and with them another set of **features** started to be requested through the issue tracker on github:
 
-- Support for website "XYZ" (where X could be one of the 700+ websites now supported)
+- Support for website "X" (where X could be one of the 700+ websites now supported)
 - Video post-processing (quality, metadata, audio)
 - Website login capable (for websites wich require a user account/ marking videos as seen on Youtube)
 
