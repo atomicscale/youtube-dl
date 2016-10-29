@@ -11,7 +11,7 @@ This report has the goal to explain how the requirements for the project were bo
 As stated in the previous **[report](https://github.com/atomicscale/youtube-dl/edit/master/ESOF-Docs/ENTREGA2.md)**, we talked with one of the founding developers, which explained us how the project was born as a very simple script, and how it expanded as soon as the users began requesting new features to be added.
 
 <p align="right">
-    <img src="https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images2/contributions.png" /alt>
+    <img src="https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images2/contributions.png" />
     <em>It's possible to notice the increase in the contributions around the begging of 2013</em>
 </p>
 
@@ -68,7 +68,18 @@ As the process evolved, the main stakeholder group (in this case, end users) inc
 
 With the new development team taking over after [Ricardo](https://github.com/rg3) the analysis and specification of new requirements became easier. Although, to prevent any copyright infringement, the validation process is still strict as the supported website list could enter a gray area in legal terms.
 
+###Use Cases
 
+As stated before the original project was very simplistic, it had one job to do and did it well, therefore the use cases for the project was only one : download a video from youtube.
+
+<p align="center">
+	<img src="https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images2/Use_Case_Beginning.png" /> 
+	<img src="https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images2/Use_Case_Present.png" />
+	<em> The Use Case envisioned in the beginning of the project and the Present Use Cases</em>
+</p>
+
+As the project grew the base use case stayed the same ,download a video,but the number of cases grew exponentially as features/options were implemented, now you could use multiple options when downloading a video to achieve the desired result, making use cases limitless.
+This caracteristics made youtube-dl a more niche project, where you can download a specific set of videos from a playlist where the max size is XXX MB, or when you download videos and change the output with regular expressions, so the file names are similar, this options for a regular user may not do any difference, but there professionals who use this extreme use cases to simplify and automate there life.
 
 
 
