@@ -98,6 +98,16 @@ As the project grew the base use case stayed the same ,download a video,but the 
 This caracteristics made youtube-dl a more niche project, where you can download a specific set of videos from a playlist where the max size is XXX MB, or when you download videos and change the output with regular expressions, so the file names are similar, this options for a regular user may not do any difference, but there professionals who use this extreme use cases to simplify and automate there life.
 
 
+###Domain Model
+
+As stated in the **Domain Modeling** slides from classes, the domain model is a representation of real-situation conceptual classes and it's meant to bridge the representational gap between the **Use-Case Model** and the**Software Design Model**.
+It consists of class names and attributes, and the relations between them. Each relation has a cardinality constraint.
+**Domain Models** don't include any external actors, transient data nor real-world classes.
+
+<p align="center">
+	<img src="https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images2/domainmodel.png" />
+	<em>Class-based representation of Youtube-Dl's Domain Model</em>
+</p>
 
 
 
