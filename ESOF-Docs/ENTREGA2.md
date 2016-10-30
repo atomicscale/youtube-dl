@@ -133,9 +133,11 @@ It consists of class names and attributes, and the relations between them. Each 
 **Domain Models** don't include any external actors, transient data nor real-world classes.
 
 <p align="left">
-	<img src="https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images2/domainmodel.png" />
+	<img src="https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images2/domainmodel.png" /><br>
 	<em> Class based representation of Youtube-Dl's Domain Model</em>
-</p>
+
+</p>	
+	
 
 
 
