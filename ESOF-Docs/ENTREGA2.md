@@ -89,7 +89,7 @@ This characteristic made youtube-dl a more niche project, where you can download
 
 ###Domain Model
 
-As stated in the **Domain Modeling** slides from classes, the domain model is a representation of real-situation conceptual classes and it's meant to bridge the representational gap between the **Use-Case Model** and the**Software Design Model**.
+The domain model is a representation of the conceptual classes and it's meant to bridge the representational gap between the **Use-Case Model** and the **Software Design Model**.
 It consists of class names and attributes, and the relations between them. Each relation has a cardinality constraint.
 **Domain Models** don't include any external actors, transient data nor real-world classes.
 
