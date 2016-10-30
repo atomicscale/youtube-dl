@@ -82,45 +82,6 @@ As stated before the original project was very simplistic, it had one job to do 
 <p align = "right">
 <em> The Use Case envisioned in the beginning of the project and the Present Use Cases</em>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Actors</th>
-    <th>Prerequisites</th>
-    <th>Description</th>
-  </tr>
-    <tr>
-    <td>Download Video</td>
-    <td>User</td>
-    <td>N/A</td>
-    <td>Allows the download of the desired video.</td>
-  </tr>
- 
-  <tr>
-    <td>Configure Software</td>
-    <td>User</td>
-    <td>N/A</td>
-    <td>Allows the user acess to the download configuration options.</td>
-  </tr>
-  
-  <tr>
-    <td>Process Options</td>
-    <td>User</td>
-    <td>Configure Software</td>
-    <td>Allows the user to make changes related to the video output, and download details.</td>
-  </tr>
-  
-   <tr>
-    <td>Download Playlist</td>
-    <td>User</td>
-    <td>N/A</td>
-    <td>Allows the user to download multiple videos in one usage.</td>
-  </tr>
-  
-</table>
-
-
-
 </p>
 As the project grew the base use case stayed the same ,download a video,but the number of cases grew exponentially as features/options were implemented, now you could use multiple options when downloading a video to achieve the desired result, making use cases limitless.
 This caracteristics made youtube-dl a more niche project, where you can download a specific set of videos from a playlist where the max size is XXX MB, or when you download videos and change the output with regular expressions, so the file names are similar, this options for a regular user may not do any difference, but there professionals who use this extreme use cases to simplify and automate there life.
