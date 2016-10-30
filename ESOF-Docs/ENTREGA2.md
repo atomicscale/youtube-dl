@@ -99,7 +99,28 @@ It consists of class names and attributes, and the relations between them. Each 
 
 </p>	
 	
-
-
-
+## Informações
+    
+    
+      Autores:
+      
+          Bruno Marques (up201405781@fe.up.pt)
+          Número de horas despendidas: 8
+          Contribuição: 25%
+          
+          João Ferreira  (j.jofe2@gmail.com)
+          Número de horas despendidas: 8
+          Contribuição: 25%
+          
+          Simão Lúcio (simaolucio@gmail.com)
+          Número de horas despendidas: 8
+          Contribuição: 25%
+          
+          Vitor Esteves(up201303104@fe.up.pt)
+          Número de horas despendidas: 8
+          Contribuição: 25%
+          
+          
+Faculdade de Engenharia da Universidade do Porto - MIEIC
+2016/10/30
 
