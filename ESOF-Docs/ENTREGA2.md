@@ -89,8 +89,28 @@ As stated before the original project was very simplistic, it had one job to do 
     <th>Prerequisites</th>
     <th>Description</th>
   </tr>
+    <tr>
+    <td>Video Download</td>
+    <td>User</td>
+    <td>N/A</td>
+    <td>Allows the download of the desired video.</td>
+  </tr>
+  <tr>
+    <td>Supported Websites</td>
+    <td>User</td>
+    <td>Video Download</td>
+    <td>Allows the download of videos from other websites.</td>
+  </tr>
+  
+  <tr>
+    <td>Configure Software</td>
+    <td>User</td>
+    <td>N/A</td>
+    <td>Allows the user acess to the download configuration options.</td>
+  </tr>
   
 </table>
+
 
 
 </p>
