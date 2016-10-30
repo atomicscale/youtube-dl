@@ -83,8 +83,8 @@ As stated before the original project was very simplistic, it had one job to do 
 <em> The Use Case envisioned in the beginning of the project and the Present Use Cases</em>
 
 </p>
-As the project grew the base use case stayed the same ,download a video,but the number of cases grew exponentially as features/options were implemented, now you could use multiple options when downloading a video to achieve the desired result, making use cases limitless.
-This caracteristics made youtube-dl a more niche project, where you can download a specific set of videos from a playlist where the max size is XXX MB, or when you download videos and change the output with regular expressions, so the file names are similar, this options for a regular user may not do any difference, but there professionals who use this extreme use cases to simplify and automate there life.
+As the project grew the base usage case stayed the same, download a video, however the number of cases grew exponentially as features/options were implemented, now you could use multiple options when downloading a video to achieve the desired result, making use cases limitless.
+This characteristic made youtube-dl a more niche project, where you can download a specific set of videos from a playlist where the max size is XXX MB, or when you download videos and change the output with regular expressions, so the file names are similar, these options for a regular user may not do much difference, but there are professionals who use this extreme use cases to simplify and automate their lives.
 
 
 ###Domain Model
