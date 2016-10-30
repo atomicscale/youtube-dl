@@ -98,6 +98,16 @@ It consists of class names and attributes, and the relations between them. Each 
 	<em> Class based representation of Youtube-Dl's Domain Model</em>
 
 </p>	
+
+
+###Final Thoughts
+
+During the development of this report we got a better understanding of the software inner workings.
+In the elaboration of the **Use Cases Diagram** we could see how the interaction between the user and the software was very simplified, and since it is command line application we can see how that streamlines the interaction options. Still we don’t believe the project development was ever held back by this since the features kept being implemented and the software continued expanding.
+
+
+About the elaboration of the **Domain Model** we were presented with an interesting situation since the developers themselves at one point had to split the software into various parts in order to organize it better. This situation even though not completely similar was somehow relatable to the process we took on finding the conceptual classes and bringing together the **Use Case Model** and **Software Design Model** representations.
+	
 	
 ## Informações
     
