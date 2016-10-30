@@ -104,9 +104,9 @@ As stated in the **Domain Modeling** slides from classes, the domain model is a 
 It consists of class names and attributes, and the relations between them. Each relation has a cardinality constraint.
 **Domain Models** don't include any external actors, transient data nor real-world classes.
 
-<p align="right">
+<p align="left">
 	<img src="https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images2/domainmodel.png" />
-	<em> Class-based representation of Youtube-Dl's Domain Model</em>
+	<em> Class based representation of Youtube-Dl's Domain Model</em>
 </p>
 
 
