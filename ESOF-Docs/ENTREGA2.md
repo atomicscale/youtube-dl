@@ -90,23 +90,31 @@ As stated before the original project was very simplistic, it had one job to do 
     <th>Description</th>
   </tr>
     <tr>
-    <td>Video Download</td>
+    <td>Download Video</td>
     <td>User</td>
     <td>N/A</td>
     <td>Allows the download of the desired video.</td>
   </tr>
-  <tr>
-    <td>Supported Websites</td>
-    <td>User</td>
-    <td>Video Download</td>
-    <td>Allows the download of videos from other websites.</td>
-  </tr>
-  
+ 
   <tr>
     <td>Configure Software</td>
     <td>User</td>
     <td>N/A</td>
     <td>Allows the user acess to the download configuration options.</td>
+  </tr>
+  
+  <tr>
+    <td>Process Options</td>
+    <td>User</td>
+    <td>Configure Software</td>
+    <td>Allows the user to make changes related to the video output, and download details.</td>
+  </tr>
+  
+   <tr>
+    <td>Download Playlist</td>
+    <td>User</td>
+    <td>N/A</td>
+    <td>Allows the user to download multiple videos in one usage.</td>
   </tr>
   
 </table>
