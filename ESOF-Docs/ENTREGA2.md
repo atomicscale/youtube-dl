@@ -70,7 +70,7 @@ With the new development team taking over after [Ricardo](https://github.com/rg3
 
 ###Use Cases
 
-As stated before the original project was very simplistic, it had one job to do and did it well, therefore the use cases for the project was only one : download a video from youtube.
+As stated before the original project was very simplistic, it had one job to do and did it well, therefore the use cases for the project was only one : download a video from youtube, but it evolved into what we see in the figures.
 
 <p align="center">
 	<img src="https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images2/Use_Case_Beginning.png" /> 
