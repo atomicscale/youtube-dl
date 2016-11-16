@@ -82,23 +82,55 @@ As stated before the original project was very simplistic, it had one job to do 
 <p align = "right">
 <em> The Use Case envisioned in the beginning of the project and the Present Use Cases</em>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Actors</th>
-    <th>Prerequisites</th>
-    <th>Description</th>
-  </tr>
-  
-</table>
-
-
 </p>
-As the project grew the base use case stayed the same ,download a video,but the number of cases grew exponentially as features/options were implemented, now you could use multiple options when downloading a video to achieve the desired result, making use cases limitless.
-This caracteristics made youtube-dl a more niche project, where you can download a specific set of videos from a playlist where the max size is XXX MB, or when you download videos and change the output with regular expressions, so the file names are similar, this options for a regular user may not do any difference, but there professionals who use this extreme use cases to simplify and automate there life.
+As the project grew the base usage case stayed the same, download a video, however the number of cases grew exponentially as features/options were implemented, now you could use multiple options when downloading a video to achieve the desired result, making use cases limitless.
+This characteristic made youtube-dl a more niche project, where you can download a specific set of videos from a playlist where the max size is XXX MB, or when you download videos and change the output with regular expressions, so the file names are similar, these options for a regular user may not do much difference, but there are professionals who use this extreme use cases to simplify and automate their lives.
 
 
+###Domain Model
+
+The domain model is a representation of the conceptual classes and it's meant to bridge the representational gap between the **Use-Case Model** and the **Software Design Model**.
+It consists of class names and attributes, and the relations between them. Each relation has a cardinality constraint.
+**Domain Models** don't include any external actors, transient data nor real-world classes.
+
+<p align="left">
+	<img src="https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images2/domainmodel.png" /><br>
+	<em> Class based representation of Youtube-Dl's Domain Model</em>
+
+</p>	
 
 
+###Final Thoughts
 
+During the development of this report we got a better understanding of the software inner workings.
+In the elaboration of the **Use Cases Diagram** we could see how the interaction between the user and the software was very simplified, and since it is command line application we can see how that streamlines the interaction options. Still we don’t believe the project development was ever held back by this since the features kept being implemented and the software continued expanding.
+
+
+About the elaboration of the **Domain Model** we were presented with an interesting situation since the developers themselves at one point had to split the software into various parts in order to organize it better. This situation even though not completely similar was somehow relatable to the process we took on finding the conceptual classes and bringing together the **Use Case Model** and **Software Design Model** representations.
+	
+	
+## Informações
+    
+    
+      Autores:
+      
+          Bruno Marques (up201405781@fe.up.pt)
+          Número de horas despendidas: 8
+          Contribuição: 25%
+          
+          João Ferreira  (j.jofe2@gmail.com)
+          Número de horas despendidas: 8
+          Contribuição: 25%
+          
+          Simão Lúcio (simaolucio@gmail.com)
+          Número de horas despendidas: 8
+          Contribuição: 25%
+          
+          Vitor Esteves(up201303104@fe.up.pt)
+          Número de horas despendidas: 8
+          Contribuição: 25%
+          
+          
+Faculdade de Engenharia da Universidade do Porto - MIEIC
+2016/10/30
 
