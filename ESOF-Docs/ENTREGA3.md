@@ -5,7 +5,8 @@
 
 ##Introduction to Software Architecture and the 4+1 Architectural View Model
   In this report we continue our review of this project's software architecture, taking a look at the design choices the developers took overtime and hopefully getting a better understanding of how they influenced the project either in a positive or negative way.
-  We payed close attention to the implementation of any architectural pattern in this project, an [architectural pattern](https://en.wikipedia.org/wiki/Architectural_pattern) is a great strategy for the development of a project since it provides a standardized solution for a recurring problem. In this manner we took a look at the architecture of **Youtube-dl** and 
+  We payed close attention to the implementation of any architectural pattern in this project, an [architectural pattern](https://en.wikipedia.org/wiki/Architectural_pattern) is a great strategy for the development of a project since it provides a standardized solution for a recurring problem. In this manner we took a look at the architecture of **Youtube-dl** and couldn't quite match any specific [architectural pattern](https://en.wikipedia.org/wiki/Architectural_pattern) however what we concluded was that it implemented some sort of hybrid design. We believe that this maybe be a result of the change in command and redirection of the project after [Ricardo Gonzalez](https://github.com/rg3) left, and a whole restructuring began.
+  This hybrid stucture we observed comes from the fact that the whole program runs as a combination of modules that are executed thanks to a script, that script being **Youtube-dl** and makes it have some of the characteristics of a Repository.
   
 ##Logical View
   
