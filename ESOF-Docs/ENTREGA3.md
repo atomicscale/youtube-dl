@@ -20,8 +20,7 @@
 ![Component Diagram](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images3/Component%20Diagram.png)
 
 
-Youtube-dl consists of a couple of components. These components and their relationships are visualized in [Component Diagram](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images3/Component%20Diagram.png).
-The main components are: 
+Youtube-dl consists of 4 main components. These components and their relationships are visualized in [Component Diagram](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images3/Component%20Diagram.png):
 * **YoutubeDL**: the core of the application. This component is responsible for the overall process. It processes the input, parsed arguments from the command-line and information from assumptions made by youtube-dl itself.  
 * **Extractors**: responsible for gathering the information about the video. The extractors are able to extract video-urls from webpages through analysis (regular expressions for instance). The extractors provide the information in a pre-defined format so that it can be processed further by the *YoutubeDL* component.  
 * **Downloaders**: the downloaders are able to transfer a remote video to the local filesystem. Depending on the media-format this component will determine which downloader to use.
