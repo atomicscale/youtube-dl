@@ -4,8 +4,8 @@
 
 
 ##Introduction to Software Architecture and the 4+1 Architectural View Model
-  In this report we continue our review of this project's software architecture, taking a look at the design choices the developers took overtime and hopefully getting a better understanding of how they influenced the project either in a positive or negative way.
-  We payed close attention to the implementation of any architectural pattern in this project, an [architectural pattern](https://en.wikipedia.org/wiki/Architectural_pattern) is a great strategy for the development of a project since it provides a standardized solution for a recurring problem. In this manner we took a look at the architecture of **Youtube-dl** and couldn't quite match any specific [architectural pattern](https://en.wikipedia.org/wiki/Architectural_pattern) however what we concluded was that it implemented some sort of hybrid design. We believe that this maybe be a result of the change in command and redirection of the project after [Ricardo Gonzalez](https://github.com/rg3) left, and a whole restructuring began.
+  In this report we continue our review of this project's software architecture by taking a look at the design choices the developers took over the time and hopefully getting a better understanding of how they influenced the project either in a positive or negative way.
+  We payed close attention to the implementation of any architectural pattern in this project: An [architectural pattern](https://en.wikipedia.org/wiki/Architectural_pattern) is a great strategy for the development of a project since it provides a standardized solution for a recurring problem. In this manner we took a look at the architecture of **Youtube-dl** and couldn't quite match any specific [architectural pattern](https://en.wikipedia.org/wiki/Architectural_pattern) however, we concluded that it implemented some sort of hybrid design. We believe that this maybe be a result of the change in command and redirection of the project after [Ricardo Gonzalez](https://github.com/rg3) left, and then a whole restructuring began.
   This hybrid stucture we observed comes from the fact that the whole program runs as a combination of modules that are executed thanks to a script, that script being **Youtube-dl** and makes it have some of the characteristics of a Repository. However the way it the inputs from several modules are transmited into others without a layered architecture, just a continuous data flow to execute the required funcionts leaves it much closer to a pipe and filters sort of architecture.
   So without neglecting any we believe this project follows this sort of hybrid between the two architectures.
   
@@ -32,32 +32,6 @@ Youtube-dl consists of 4 main components. These components and their relationshi
 
 ##Process View
 
-The process view is implemented through the usage of activity diagrams that allow the representation of data flow, the processing steps, etc. this way we present in the diagram ahead the Process View of the software in question. **Youtube-dl** functions as a center piece for several activities that execute a specific function, data flows from a couple extensions that check for user preferences and the website/download specifications all the way to the core program which will parse that information and execute the download.
+The process view is implemented through the usage of activity diagrams that allow the representation of data flow, the processing steps, etc. This way, we present in the diagram ahead the Process View of the software in question. **Youtube-dl** functions as a center piece for several activities that execute a specific function, data flows from a couple extensions that check for user preferences and the website/download specifications, all the way to the core program, which will parse that information and execute the download.
 
 ![Process Diagram](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images3/viewdiagram.png)
-
-
-## Informações
-    
-    
-      Autores:
-      
-          Bruno Marques (up201405781@fe.up.pt)
-          Número de horas despendidas: 8
-          Contribuição: 25%
-          
-          João Ferreira  (j.jofe2@gmail.com)
-          Número de horas despendidas: 8
-          Contribuição: 25%
-          
-          Simão Lúcio (simaolucio@gmail.com)
-          Número de horas despendidas: 8
-          Contribuição: 25%
-          
-          Vitor Esteves(up201303104@fe.up.pt)
-          Número de horas despendidas: 8
-          Contribuição: 25%
-          
-          
-Faculdade de Engenharia da Universidade do Porto - MIEIC
-2016/10/30
