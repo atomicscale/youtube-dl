@@ -49,6 +49,8 @@ We used the [draw.io](https://www.draw.io/) platform in the making of all our di
 
 In the **logical view**'s package diagram we try to explain how the different packages interact with each other, their dependancies and how important **Youtube-DL**'s main package is.
 
+In the **development view** package diagram we tried to have a better understanding at how the software components work with eachother and how it they evolve along with the software development.
+
 In the **deployment view** we analyzed the hardware/software requirements interactions of the software looking over at how it behaves and what it needs to behave correctly from a machine standpoint.
 
 And finally in the **process view** we saw how the software behaves and how data is transmited and flows within the internal stucture of the software, obtaining this way a better insight at how the developers mind organized and executed their vision.
