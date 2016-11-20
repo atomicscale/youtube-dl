@@ -5,6 +5,8 @@
 
 ##Introduction to Software Architecture and the 4+1 Architectural View Model
   In this report we continue our review of this project's software architecture, taking a look at the design choices the developers took overtime and hopefully getting a better understanding of how they influenced the project either in a positive or negative way.
+  We payed close attention to the implementation of any architectural pattern in this project, an [architectural pattern](https://en.wikipedia.org/wiki/Architectural_pattern) is a great strategy for the development of a project since it provides a standardized solution for a recurring problem. In this manner we took a look at the architecture of **Youtube-dl** and 
+  
 ##Logical View
 
   To keep the structure simple, **Youtube-dl** has separate folders for the different kind of packages. Within the repository there is a folder called youtube_dl which contains all of the source-code. Within that folder there are subfolders called **downloader**, **extractor** and **postprocessor**. 
@@ -18,3 +20,5 @@
 ##Deployment View
 
 ##Process View
+
+The process view is implemented through the usage of activity diagrams that allow the representation of data flow, the processing steps, etc. Th
