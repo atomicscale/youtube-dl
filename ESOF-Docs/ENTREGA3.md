@@ -32,4 +32,5 @@ Youtube-dl consists of 4 main components. These components and their relationshi
 ##Process View
 
 The process view is implemented through the usage of activity diagrams that allow the representation of data flow, the processing steps, etc. this way we present in the diagram ahead the Process View of the software in question. **Youtube-dl** functions as a center piece for several activities that execute a specific function, data flows from a couple extensions that check for user preferences and the website/download specifications all the way to the core program which will parse that information and execute the download.
-![Process Diagram](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images3/Processview.png)
+
+![Process Diagram](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images3/viewdiagram.png)
