@@ -30,13 +30,16 @@ Youtube-dl consists of 4 main components. These components and their relationshi
 * **Post Processors**: responsible for any post-download operations that should be applied on the video. Think of embedding subtitles, extraction the audio, etc.
 
 ##Deployment View
+The following diagram represents the relation between the software and hardware in the normal functioning of **Youtube-DL**.
+
 ![Deployment Diagram](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images3/esof3_deployment.png)
 
+**Youtube-DL** runs over any OS with the right Python libraries installed. Video files are downloaded trough HTTP requests between the user computer and the video server machine.
 ##Process View
 
 The process view is implemented through the usage of activity diagrams that allow the representation of data flow, the processing steps, etc. This way, we present in the diagram ahead the Process View of the software in question. **Youtube-dl** functions as a center piece for several activities that execute a specific function, data flows from a couple extensions that check for user preferences and the website/download specifications, all the way to the core program, which will parse that information and execute the download.
 
-![Process Diagram](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images3/viewdiagramfixed.png)
+![Process Diagram](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images3/viewdiagram.png)
 
 
 ## Informações
