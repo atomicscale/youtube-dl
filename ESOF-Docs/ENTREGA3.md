@@ -35,6 +35,7 @@ The following diagram represents the relation between the software and hardware 
 ![Deployment Diagram](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images3/esof3_deployment.png)
 
 **Youtube-DL** runs over any OS with the right Python libraries installed. Video files are downloaded trough HTTP requests between the user computer and the video server machine.
+
 ##Process View
 
 The process view is implemented through the usage of activity diagrams that allow the representation of data flow, the processing steps, etc. This way, we present in the diagram ahead the Process View of the software in question. **Youtube-dl** functions as a center piece for several activities that execute a specific function, data flows from a couple extensions that check for user preferences and the website/download specifications, all the way to the core program, which will parse that information and execute the download.
@@ -47,6 +48,10 @@ It's important to let you know that both the diagrams and the ideas behind their
 We used the [draw.io](https://www.draw.io/) platform in the making of all our diagrams.
 
 In the **logical view**'s package diagram we try to explain how the different packages interact with each other, their dependancies and how important **Youtube-DL**'s main package is.
+
+In the **deployment view** we analyzed the hardware/software requirements interactions of the software looking over at how it behaves and what it needs to behave correctly from a machine standpoint.
+
+And finally in the **process view** we saw how the software behaves and how data is transmited and flows within the internal stucture of the software, obtaining this way a better insight at how the developers mind organized and executed their vision.
 
 ## Informações
     
