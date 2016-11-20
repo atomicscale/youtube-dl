@@ -28,7 +28,7 @@ The main components are:
 * **Post Processors**: responsible for any post-download operations that should be applied on the video. Think of embedding subtitles, extraction the audio, etc.
 
 ##Deployment View
-![Deployment Diagram](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images3/Component%20Diagram.png)
+![Deployment Diagram](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images3/esof3_deployment.png)
 
 
 ##Process View
