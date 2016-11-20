@@ -41,6 +41,12 @@ The process view is implemented through the usage of activity diagrams that allo
 
 ![Process Diagram](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images3/viewdiagramfixed.png)
 
+##Summary
+
+It's important to let you know that both the diagrams and the ideas behind their making are solely based on the project interpretation's made by the authors. That said, it's possible that some of them may change in the near future (most likely, based on the project expasion route) and might have been different in the past.
+We used the [draw.io](https://www.draw.io/) platform in the making of all our diagrams.
+
+In the logical view we try to explain how the different packages interact with each other, their dependancies and how important **Youtube-DL**'s main package is.
 
 ## Informações
     
