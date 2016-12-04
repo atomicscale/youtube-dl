@@ -42,20 +42,23 @@ some of them became obsolete and are no longer relevant by several reasons, such
   
   While running the testing methods for the extractors of the websites provided we found that some of them didn't work. This was mainly because the website was redesigned, rendering the old extractor useless or simply because the authentication method changed. One which caught our attention, was **fusion.net**. Apparently, the link provided in the test area was still valid and the website had no authentication method, which was strangely unusual.
   
-  //imagem do link para o fusion
+  ![fusionnet image](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/Fusion-website.png)
   
-  We searched the issue tracker and found that this was never reported, neither anyone had tried to fix it:
-  
-  //imagem do tracker
+  We searched the issue tracker and found that this was never reported, neither anyone had tried to fix it.
   
   We then tried to reproduce the bug and we managed to be able to get some information using **Youtube-dl**'s debbuger:
   
-  //imagem do bug
+  ![prebug](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/pre-bug.png)
  
- After this attempt, we decided to investigate what the problem was and we searched for the **fusion** extractor, named **fusion.py**. We noticed it used another extrator named **oolaia.py** and that the problem was 
+ After a carefull analysis of the Bug trace call , we found out that the the file **ooyala.py** was throwing the error  **list index out of bug** , the conclusion was that the object was empty , so this meant that the **fusion extractor** was not calling this extractor correctly.
+ The fusion extractor is rather simple and understanding the works was efficient, the problem in this extractor was that the regular expression used to search the webpage was not matched therefore the **ooyala extractor** call was passed with empty arguments.
+ So to fix this we inspected the website html to find the regular expression and the tag that matched the video info we wanted.
   
-
-
+  ![solved](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/pos-fix.png)
+  
+  ![posbug](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/after-bug-fix.png)
+ 
+  After we implemented the fix, we submited a pull request, in order to integrate it into the main core. We are still waiting it to be reviewd and approved by **youtube-dl**'s team.
 
 ## Informações
     
@@ -63,19 +66,19 @@ some of them became obsolete and are no longer relevant by several reasons, such
       Autores:
       
           Bruno Marques (up201405781@fe.up.pt)
-          Número de horas despendidas: 8
+          Número de horas despendidas: 10
           Contribuição: 25%
           
           João Ferreira  (j.jofe2@gmail.com)
-          Número de horas despendidas: 8
+          Número de horas despendidas: 10
           Contribuição: 25%
           
           Simão Lúcio (simaolucio@gmail.com)
-          Número de horas despendidas: 8
+          Número de horas despendidas: 10
           Contribuição: 25%
           
           Vitor Esteves(up201303104@fe.up.pt)
-          Número de horas despendidas: 8
+          Número de horas despendidas: 10
           Contribuição: 25%
           
           
