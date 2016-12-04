@@ -2,6 +2,8 @@
 
 ![youtube-dl image](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images1/youtube-dl.jpg)
 
+##Introduction
+
   In this report we will perform an analysis over the project and the verification and validation methods. We will analyse the methods used by the development team and contribute with our opinions about it, aswell as utilize our own tools to perform said analysis and verify if the project is being correctly validated.
   
   At second we will try to find test statistics and analytics, using tools like [codacy](https://www.codacy.com/). 
