@@ -6,7 +6,7 @@
 
   In this report we will perform an analysis over the project and the verification and validation methods. We will analyse the methods used by the development team and contribute with our opinions about it, aswell as utilize our own tools to perform said analysis and verify if the project is being correctly validated.
   
-  At first,/needs completion/
+  At first, we will evaluate the testability of the code in the context given and the implications of the organizations of the tests to the review of the code by de developers.
   
   At second we will try to find test statistics and analytics, using tools like [codacy](https://www.codacy.com/) aswell as using tools such as [PyCharm](https://www.jetbrains.com/pycharm/) for test running. 
   
@@ -14,11 +14,13 @@
 
 ##Software Testability and Reviews
 
-Being developed by a large community, **Youtube-DL** testing can be a mess sometimes. Starting with the unity testing: it's implementation is a good signal on its own. Given the software modularity, the unit testing structure it's easy to define, but also bearing in mind that many of the tests rely on external servers, it's almost as easy for one of them to break since the urls are forcibly hardcoded. This could be a problem as the url extractor could be working for a specific website but, because of a "defective" url, the software should fail the test.
+Being developed by a large community, **Youtube-DL** testing could become a mess. The developers went with unit testing exclusively: it's implementation is a good signal on its own. Given the software modularity, the unit testing structure it's easy to define, but also bearing in mind that many of the tests rely on external servers, it's almost as easy for one of them to break since the urls are forcibly hardcoded. This could be a problem as the url extractor could be working for a specific website but, because of a "defective" url, the software should fail the test.
 
-It's very easy to identify and separate the tests. Some of the most basic are the _download_, _url_, _infoExtractor_ and _http_ tests which are easy to understand and very straightforward. Major bugs in the more fault prone functions of **Youtube-DL** (mainly extractors) can be cought running this, but it's not so easy to run them quickly and specifically for a single combo of _url/extractor_.
+It's very easy to identify and separate the tests and the results of each one of them. Some of the most basic are the _download_, _url_, _infoExtractor_ and _http_ tests which are easy to understand and very straightforward. Major bugs in the more fault prone functions of **Youtube-DL** (mainly extractors) can be cought running the _download_ test individually for each extractor but you have a "full test" where all the extractors are tested.
 
-The pertinence of aproaches to some aspects sepcific to some extractor can be questioned. We can see this in tests as _age restriction_ wich exists only to check Youtube and Youporn and many Youtube related tests that can be small crumbs of old tests from the time when **Youtube-DL** only had the ability to download Youtube videos (_youtube signature_ and _youtube lists_). A different aproach could be the integration of the age restriction and list. 
+The pertinence of aproaches to some aspects sepcific to some extractor can be questioble. We can see this in tests as _age restriction_ wich exists only to check Youtube and Youporn and many Youtube related tests that can be small crumbs of old versions from the time when **Youtube-DL** only had the ability to download Youtube videos (_youtube signature_ and _youtube lists_). A different aproach could be the integration of the age restriction and playlists in the \_TEST variable of the default template wich is in the README file to be used by developers. That way the test would cover many more than one or two websites from seven hundred avaliable, and therefore, would be much more usefull.
+
+Even though the code is being submmited from many different developers, the guidelines and the templates defined in the README file allow for the testing to be made the same way. So the testing of **Youtube-DL** is homogeneous.
   
 ##Test Statistics and analytics
 
@@ -50,14 +52,7 @@ some of them became obsolete and are no longer relevant by several reasons, such
   
   //imagem do bug
  
- After a carefull analysis of the Bug trace call , we found out that the the file **ooyala.py** was throwing the error  **list index out of bug** , the conclusion was that the object was empty , so this meant that the **fusion extractor** was not calling this extractor correctly.
- The fusion extractor is rather simple and understanding the works was efficient, the problem in this extractor was that the regular expression used to search the webpage was not matched therefore the **ooyala extractor** call was passed with empty arguments.
- So to fix this we inspected the website html to find the regular expression and the tag that matched the video info we wanted.
- 
- //imagem de correcçao do bug
- 
- After we implemented the fix, we submited a pull request, in order to integrate it into the main core. We are still waiting it to be reviewd and approved by **youtube-dl**'s team.
- 
+ After this attempt, we decided to investigate what the problem was and we searched for the **fusion** extractor, named **fusion.py**. We noticed it used another extrator named **oolaia.py** and that the problem was 
   
 
 
