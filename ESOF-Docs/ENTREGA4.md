@@ -8,7 +8,9 @@
 
 Being developed by a large community, **Youtube-DL** testing can be a mess sometimes. Starting with the unity testing: it's implementation is a good signal on its own. Given the software modularity, the unit testing structure it's easy to define, but also bearing in mind that many of the tests rely on external servers, it's almost as easy for one of them to break since the urls are forcibly hardcoded. This could be a problem as the url extractor could be working for a specific website but, beacause of a "defective" url, the software hould fail the test.
 
-It's very easy to identify and separate the tests. Some of the most basic are the _download_,_url_,_infoExtractor_ and _http_ tests which are easy to understand and very straightforward. Major bugs in the more fault prone functions of **Youtube-DL** (mainly extractors) can be cought running this, but it's not so easy to run them quickly and specifically for a single combo of _url/extractor_.
+It's very easy to identify and separate the tests. Some of the most basic are the _download_, _url_, _infoExtractor_ and _http_ tests which are easy to understand and very straightforward. Major bugs in the more fault prone functions of **Youtube-DL** (mainly extractors) can be cought running this, but it's not so easy to run them quickly and specifically for a single combo of _url/extractor_.
+
+The pertinence of aproaches to some aspects sepcific to some extractor can be questioned. We can see this in tests as _age restriction_ wich exists only to check Youtube and Youporn and many Youtube related tests that can be small crumbs of old tests from the time when **Youtube-DL** only had the ability to download Youtube videos (_youtube signature_ and _youtube lists_). A different aproach could be the integration of the age restriction and list 
 
 
   
