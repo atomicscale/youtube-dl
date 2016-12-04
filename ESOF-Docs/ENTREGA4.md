@@ -51,10 +51,13 @@ some of them became obsolete and are no longer relevant by several reasons, such
   //imagem do bug
  
  After a carefull analysis of the Bug trace call , we found out that the the file **ooyala.py** was throwing the error  **list index out of bug** , the conclusion was that the object was empty , so this meant that the **fusion extractor** was not calling this extractor correctly.
- the fusion extractor is rather simple and understanding the works was efficient, the problem in this extractor was that the regular expression used to search the webpage was not matched therefore the **ooyala extractor** call was passed with empty arguments.
+ The fusion extractor is rather simple and understanding the works was efficient, the problem in this extractor was that the regular expression used to search the webpage was not matched therefore the **ooyala extractor** call was passed with empty arguments.
  So to fix this we inspected the website html to find the regular expression and the tag that matched the video info we wanted.
  
- After this attempt, we decided to investigate what the problem was and we searched for the **fusion** extractor, named **fusion.py**. We noticed it used another extrator named **oolaia.py** and that the problem was 
+ //imagem de correcçao do bug
+ 
+ After we implemented the fix, we submited a pull request, in order to integrate it into the main core. We are still waiting it to be reviewd and approved by **youtube-dl**'s team.
+ 
   
 
 
