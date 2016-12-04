@@ -37,6 +37,22 @@ some of them became obsolete and are no longer relevant by several reasons, such
     Coverage
     
 ##Bug
+  
+  While running the testing methods for the extractors of the websites provided we found that some of them didn't work. This was mainly because the website was redesigned, rendering the old extractor useless or simply because the authentication method changed. One which caught our attention, was **fusion.net**. Apparently, the link provided in the test area was still valid and the website had no authentication method, which was strangely unusual.
+  
+  //imagem do link para o fusion
+  
+  We searched the issue tracker and found that this was never reported, neither anyone had tried to fix it:
+  
+  //imagem do tracker
+  
+  We then tried to reproduce the bug and we managed to be able to get some information using **Youtube-dl**'s debbuger:
+  
+  //imagem do bug
+ 
+ After this attempt, we decided to investigate what the problem was and we searched for the **fusion** extractor, named **fusion.py**. We noticed it used another extrator named **oolaia.py** and that the problem was 
+  
+
 
 
 ## Informações
