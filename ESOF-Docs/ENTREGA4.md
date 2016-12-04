@@ -2,7 +2,11 @@
 
 ![youtube-dl image](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images1/youtube-dl.jpg)
 
-  In this report we will perform an analysis over the project and their verification and validation methods, we will analyse the methods utilized by the development team and contribute with our opinions about it, aswell as utilize our own tools to perform that analysis and verify if the project is being correctly validated. //can shoudl add more//
+  In this report we will perform an analysis over the project and the verification and validation methods. We will analyse the methods used by the development team and contribute with our opinions about it, aswell as utilize our own tools to perform said analysis and verify if the project is being correctly validated.
+  
+  At second we will try to find test statistics and analytics, using tools like [codacy](https://www.codacy.com/) aswell as using tools such as [PyCharm](https://www.jetbrains.com/pycharm/) for test running. 
+  
+  Finally we will explain how we found and solved a bug after analyzing Youtube-dl's **issues page**, why we choose that bug and how can you find new bugs in cases like this.
 
 ##Software Testability and Reviews
 
@@ -15,13 +19,18 @@ The pertinence of aproaches to some aspects sepcific to some extractor can be qu
 
   
 ##Test Statistics and analytics
-  Static
-  Group review
+
+ In the process of reviewing the software testability and project quality in the previous section, we ran the testing method developed by the team aswell as our own tests and tools to verify the condition of the project itself. In this section of the reports we will analyze these results and critise them in any way we find necessary.
+  
+  Using the knowledge we aqcuired in class to begin this review we easily concluded that any sort of **static verification methods** won't be effective since the code is logically organized in a very simple structure that leaves very few room for structural reviews, from a code perspetive as we came to discover most of the [project issues](https://github.com/rg3/youtube-dl/issues) are related to specific websites from which the software is trying to download.
+  This is where **Software Testing** becomes relevant, here the developers have layed out some **Test Cases** as mentioned before
+some of them became obsolete and are no longer relevant by several reasons. Here is an example of a test that is no longer valid because the website no longer exists and it is hardcoded to the test.
   
   Dynamic
     software testing
     Unit testing
     Coverage
+    
 ##Bug
 
 
@@ -48,5 +57,4 @@ The pertinence of aproaches to some aspects sepcific to some extractor can be qu
           
           
 Faculdade de Engenharia da Universidade do Porto - MIEIC
-2016/12/...
-
+2016/12/05
