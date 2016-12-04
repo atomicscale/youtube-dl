@@ -2,7 +2,11 @@
 
 ![youtube-dl image](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images1/youtube-dl.jpg)
 
+##Introduction
+
   In this report we will perform an analysis over the project and the verification and validation methods. We will analyse the methods used by the development team and contribute with our opinions about it, aswell as utilize our own tools to perform said analysis and verify if the project is being correctly validated.
+  
+  At first,/needs completion/
   
   At second we will try to find test statistics and analytics, using tools like [codacy](https://www.codacy.com/) aswell as using tools such as [PyCharm](https://www.jetbrains.com/pycharm/) for test running. 
   
@@ -14,9 +18,7 @@ Being developed by a large community, **Youtube-DL** testing can be a mess somet
 
 It's very easy to identify and separate the tests. Some of the most basic are the _download_, _url_, _infoExtractor_ and _http_ tests which are easy to understand and very straightforward. Major bugs in the more fault prone functions of **Youtube-DL** (mainly extractors) can be cought running this, but it's not so easy to run them quickly and specifically for a single combo of _url/extractor_.
 
-The pertinence of aproaches to some aspects sepcific to some extractor can be questioned. We can see this in tests as _age restriction_ wich exists only to check Youtube and Youporn and many Youtube related tests that can be small crumbs of old tests from the time when **Youtube-DL** only had the ability to download Youtube videos (_youtube signature_ and _youtube lists_). A different aproach could be the integration of the age restriction and list 
-
-
+The pertinence of aproaches to some aspects sepcific to some extractor can be questioned. We can see this in tests as _age restriction_ wich exists only to check Youtube and Youporn and many Youtube related tests that can be small crumbs of old tests from the time when **Youtube-DL** only had the ability to download Youtube videos (_youtube signature_ and _youtube lists_). A different aproach could be the integration of the age restriction and list. 
   
 ##Test Statistics and analytics
 
@@ -60,4 +62,4 @@ some of them became obsolete and are no longer relevant by several reasons, such
           
           
 Faculdade de Engenharia da Universidade do Porto - MIEIC
-2016/12/05
+2016/12/04
