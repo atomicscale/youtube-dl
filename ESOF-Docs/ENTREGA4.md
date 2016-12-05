@@ -60,10 +60,12 @@ We also used [Codacy](https://www.codacy.com/) to review the code and get some s
 
  ![codacy](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/codicy.png)
  
- Codacy's evaluation of the severity of bugs in the issue list:
- ![codacy1](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/project_quality.png)
+ 
  
  Codacy's evaluation of the files in the project, from A - F:
+ ![codacy1](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/project_quality.png)
+ 
+ Codacy's evaluation of the severity of bugs in the issue list:
  ![codacy2](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/severity.png)
   
  Here we see the files that raise the most issues within the community and their grading according to **Codacy** classification system, as we said before they concentrate around requests and problems with the extractor files.
