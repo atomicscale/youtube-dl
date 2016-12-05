@@ -29,17 +29,17 @@ Even though the code is being submmited from many different developers, the guid
   Using the knowledge we aqcuired in class to begin this review we easily concluded that any sort of **static verification methods** won't be effective since the code is logically organized in a very simple structure that leaves very few room for structural reviews, from a code perspetive as we came to discover most of the [project issues](https://github.com/rg3/youtube-dl/issues) are related to specific websites from which the software is trying to download.
   
   This is where **Software Testing** becomes relevant, here the developers have layed out some **Test Cases** as mentioned before
-some of them became obsolete and are no longer relevant by several reasons, such as missing url or even geographical restrictions. Here is an example of a test that is no longer valid because the website no longer exists.
+some of them became obsolete and are no longer relevant by several reasons, such as missing urls or even geographical restrictions. Here is an example of a test that is no longer valid because the website no longer exists.
 
 ![testfailed image](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/file1.png)
 
 ![testfailed image2](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/file2.png)
 
-If we ran all the test provided by the team we will get a result similar to this one:
+If we run all the tests provided by the team we will get a result similar to this one:
 
 ![testfailed image3](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/testfailed.jpg)
 
-These fails are most of the time caused by 404 errors, denied permission errors, it was in this list of tests we came across the bug we later solved.
+These failures are most of the time caused by 404 errors or denied permission errors, it was through here that we came across the bug we later solved.
 
 Being a command line applicaton some of the testing process is very streamlined, issues regarding interaction between modules are rare however issues within a specific extractor are where bugs concentrate.
 
@@ -60,8 +60,10 @@ We also used [Codacy](https://www.codacy.com/) to review the code and get some s
 
  ![codacy](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/codicy.png)
  
+ Codacy's evaluation of the severity of bugs in the issue list:
  ![codacy1](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/project_quality.png)
  
+ Codacy's evaluation of the files in the project, from A - F:
  ![codacy2](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/severity.png)
   
  Here we see the files that raise the most issues within the community and their grading according to **Codacy** classification system, as we said before they concentrate around requests and problems with the extractor files.
