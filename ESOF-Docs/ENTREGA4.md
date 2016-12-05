@@ -30,18 +30,36 @@ Even though the code is being submmited from many different developers, the guid
   
   This is where **Software Testing** becomes relevant, here the developers have layed out some **Test Cases** as mentioned before
 some of them became obsolete and are no longer relevant by several reasons, such as missing url or even geographical restrictions. Here is an example of a test that is no longer valid because the website no longer exists.
+
 ![testfailed image](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/file1.png)
+
 ![testfailed image2](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/file2.png)
 
 
-Being a command line applicaton some of the testing process is very streamlined, issues regarding interaction between modules are rare however issues within a specific module are where bugs concentrate due to the nature of this project.
-Unit testing is this way a process that is quite similar to system testing, the **Unit Tests** the project conducts are very similar to **System testing** since in this context  they execute they evaluate the functionalities of the software diagonally crossing all major modules, but utilyzing a specific [extractor](https://github.com/atomicscale/youtube-dl/tree/master/youtube_dl/extractor).
-This makes the process of evaluating test coverage difficult, as we can see from these screenshots.
+Being a command line applicaton some of the testing process is very streamlined, issues regarding interaction between modules are rare however issues within a specific extractor are where bugs concentrate.
+
+Unit testing is this way a process that is quite similar to system testing, the **Unit Tests** the project conducts are very similar to **System testing** since in this context  they execute they evaluate the functionalities of the software diagonally crossing all major modules, but utilizing a specific [extractor](https://github.com/atomicscale/youtube-dl/tree/master/youtube_dl/extractor).
+
+This makes the process of evaluating test coverage difficult, as we can see from these screenshots:
 	
 ![coverage image](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/pre-coverage.png)
 
-|[coverage result](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/pos-final-coverage.png)
+![coverage result](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/pos-final-coverage.png)
 
+This happens because a specific lines of code are only called in specific websites so this means to do an accurate **system test**, with the current structure we would have to download a video from every supported website, this makes the whole process tedious and complex.
+
+We have no reason to believe **Integration Testing** is used in this project since it was stated several times by members of the project they are no longer working on introducing new modules, or even a GUI, focusing only on website support.
+**Acceptance testing** functions a little bit through the issue list, and Github interaction of users reporting if websites are functional or not.
+
+We also used [Codacy](https://www.codacy.com/) to review the code and get some statistics about it's organization.
+
+ ![codacy](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/codicy.png)
+ 
+ ![codacy1](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/project_quality.png)
+ 
+ ![codacy2](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/severity.png)
+ 
+ Here we see the files that raise the most issues within the community and their grading according to **Codacy** classification system.
 
     
 ##Bug
@@ -64,7 +82,7 @@ This makes the process of evaluating test coverage difficult, as we can see from
   
   ![posbug](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/after-bug-fix.png)
   
- The value for this coverage is this low because to have an accurate representation we would have to use every module in the project, this makes an extensive and accurate review dificult.
+ The value for this coverage is this low because to have an accurate representation we would have to use every extractor in the project, this makes an extensive and accurate review dificult.
   After we implemented the fix, we submited a pull request, in order to integrate it into the main core. We are still waiting it to be reviewed and approved by **youtube-dl**'s team.
 
 ## Informações
