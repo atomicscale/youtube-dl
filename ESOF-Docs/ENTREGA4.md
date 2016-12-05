@@ -74,7 +74,7 @@ We also used [Codacy](https://www.codacy.com/) to review the code and get some s
   
   ![fusionnet image](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/Fusion-website.png)
   
-  We searched the issue tracker and found that this was never reported, neither anyone had tried to fix it.
+  We searched the [issue](https://github.com/rg3/youtube-dl/issues?utf8=%E2%9C%93&q=fusion) tracker and found that this was never reported, neither anyone had tried to fix it.
   
   We then tried to reproduce the bug and we managed to be able to get some information using **Youtube-dl**'s debbuger:
   
@@ -88,7 +88,7 @@ We also used [Codacy](https://www.codacy.com/) to review the code and get some s
   
   ![posbug](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/after-bug-fix.png)
   
-  After we implemented the fix, we submited a pull request, in order to integrate it into the main core. We are still waiting it to be reviewed and approved by **youtube-dl**'s team.
+  After we implemented the fix, we submited a [pull request](https://github.com/rg3/youtube-dl/pull/11364), in order to integrate it into the main core. We are still waiting it to be reviewed and approved by **youtube-dl**'s team.
 
 ## Informações
     
