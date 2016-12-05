@@ -35,6 +35,11 @@ some of them became obsolete and are no longer relevant by several reasons, such
 
 ![testfailed image2](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/file2.png)
 
+If we ran all the test provided by the team we will get a result similar to this one:
+
+![testfailed image3](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/testfailed.jpg)
+
+These fails are most of the time caused by 404 errors, denied permission errors, it was in this list of tests we came across the bug we later solved.
 
 Being a command line applicaton some of the testing process is very streamlined, issues regarding interaction between modules are rare however issues within a specific extractor are where bugs concentrate.
 
@@ -46,7 +51,7 @@ This makes the process of evaluating test coverage difficult, as we can see from
 
 ![coverage result](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/pos-final-coverage.png)
 
-This happens because a specific lines of code are only called in specific websites so this means to do an accurate **system test**, with the current structure we would have to download a video from every supported website, this makes the whole process tedious and complex.
+This happens because a specific lines of code are only called in specific websites so this means to do an accurate **system test**, with the current structure we would have to download a video from every supported website, this makes the whole process tedious and complex and to implement an efficient testing process difficult.
 
 We have no reason to believe **Integration Testing** is used in this project since it was stated several times by members of the project they are no longer working on introducing new modules, or even a GUI, focusing only on website support.
 **Acceptance testing** functions a little bit through the issue list, and Github interaction of users reporting if websites are functional or not.
@@ -58,9 +63,10 @@ We also used [Codacy](https://www.codacy.com/) to review the code and get some s
  ![codacy1](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/project_quality.png)
  
  ![codacy2](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/severity.png)
+  
+ Here we see the files that raise the most issues within the community and their grading according to **Codacy** classification system, as we said before they concentrate around requests and problems with the extractor files.
  
- Here we see the files that raise the most issues within the community and their grading according to **Codacy** classification system.
-
+ ![codacy2](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/issueslist.jpg)
     
 ##Bug
   
@@ -82,7 +88,6 @@ We also used [Codacy](https://www.codacy.com/) to review the code and get some s
   
   ![posbug](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images4/after-bug-fix.png)
   
- The value for this coverage is this low because to have an accurate representation we would have to use every extractor in the project, this makes an extensive and accurate review dificult.
   After we implemented the fix, we submited a pull request, in order to integrate it into the main core. We are still waiting it to be reviewed and approved by **youtube-dl**'s team.
 
 ## Informações
