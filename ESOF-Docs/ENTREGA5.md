@@ -62,11 +62,27 @@ Besides some functions in the InfoExtractor that receive over eight parameters, 
 
 ###Keep Architecture Components Balanced
 
-###Keep Your Codebase Small
 
+###Keep Your Codebase Small
+**This was one of the six metrics that Youtube-DL did follow.**
+
+As described in Better Code Hub's guideline, "Keeping your codebase small improves maintainability, as it's less work to make structural changes in a smaller codebase". Youtube-DL does follow this guideline and it obtained a 175 man-month result, which is about 14.5 man-years and way less than the 20 man-year limit. A **man-year** is a method of describing the amount of work done by an individual throughout the entire year.
+
+///IMAGEM KEEP YOUR CODEBASE SMALL
 ###Automate tests
 
+**This was one of the four metrics that Youtube-DL didn't follow.**
+
+For large systems such as Youtube-DL and it's 89,817 lines of code (notice that the large system criteria means more than 10,000 lines of code) the total lines of code should be at least 50% of the total lines of production code. Apparently the lines of test code make up about 4% of the total code, 3,271 lines precisely, which falls short in a huge difference.
+
+//IMAGEM AUTOMATE TESTS
+
 ###Write Clean Code
+**This was one of the six metrics that Youtube-DL did follow.**
+
+The amount of code smells we can find in Youtube-DL is substantially low, which means the developers did a good job keeping the code structured and organized.
+
+//IMAGEM CLEAN CODE
 
 ## The Feature Evolution Process
 
