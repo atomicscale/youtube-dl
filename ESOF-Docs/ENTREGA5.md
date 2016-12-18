@@ -16,7 +16,7 @@ This metrics, which will be explained in the following sections, evaluate reposi
 
 ###Write Short Units of Code
 
-This was one of the four metrics Youtube-DL didn't follow.
+**This was one of the four metrics Youtube-DL didn't follow.**
 Some of the most important functions on this code, such as Youtube's information extractor, contain well over 200 lines of code (249 in this case), which is way more than the 15 line recommended and the 30 line limit that violate Better Code Hub's guideline.
 
 Besides some examples that we can find that are way over the line limit, we still think that, due to Youtube-DL's size and the amount of different contributors, the amount of times this happens is still quite small and we believe this could be easily updated by the main developers.
@@ -25,7 +25,7 @@ Besides some examples that we can find that are way over the line limit, we stil
 
 ###Write Simple Units of Code
 
-This was one of the four metrics Youtube-DL didn't follow.
+**This was one of the four metrics Youtube-DL didn't follow.**
 This metric is based on the Mccabe Code Complexity Metric or [Cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) which measures the number of linearly independent paths through a program's source code.
 
 //IMAGEM SIMPLES UNITS OF CODE
@@ -39,7 +39,7 @@ We also found out that this was a common practice in most extractors but not in 
 
 ###Write Code Once
 
-This was one of the six metrics that Youtube'DL did follow.
+**This was one of the six metrics that Youtube'DL did follow.**
 Although Better Code Hub did offer us some refactoring candidates, more than 90% of the code is well written and does comply with what is expected.
 Again, most of the information that is duplicated can be found in the extractors and this is due to Youtube-DL's extractor template that most developers use to add new websites.
 
@@ -47,7 +47,7 @@ Again, most of the information that is duplicated can be found in the extractors
 
 ###Keep Unit Interfaces Small
 
-This was one of the six metrics that Youtube'DL did follow.
+**This was one of the six metrics that Youtube'DL did follow.**
 Besides some functions in the InfoExtractor that receive over eight parameters, in the remainder of the code functions only use at most two. This again doesn't violate Better Code Hub's limit number of parameters per unit to at most 4.
 
 //IMAGEM KEEP UNIT INTERFACES SMALL
