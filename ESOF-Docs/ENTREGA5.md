@@ -73,6 +73,119 @@ Besides some functions in the InfoExtractor that receive over eight parameters, 
 Finding a feature to add to **Youtube-DL** was not an easy task. First of all because (as we said in the first report) the project does not aim to download videos from a single platform which involved a lot caution in order not to compromise the working status of all the url extractors. Then, we [noticed](https://github.com/yolonhese/youtube-dl#is-anyone-going-to-need-the-feature) that the present developer team was only accepting new features requested by the issue tracker on GitHub. Since we didn't noticed any feature missing from the software, the group decided to solve a request by a standard user. That way, even if only to a single user, it would be useful. 
 Scrolling though the issue tracker the process of choosing what to implement was based on the opinion from one of the developers related to the issue relevance. So, being fans of the 4K resolution we took it personally to solve a [problem](https://github.com/rg3/youtube-dl/issues/11457) posted recently by the user [linglung](https://github.com/linglung). In **Youtube-DL** the users have the ability to find the first N Youtube videos based on the date of publishing and number of views. But since the Youtube extractor was created the platform grew to accommodate videos with specific HD or 4K resolutions and have properties as creative commons licensing indication. The goal is to implement a way to filter the auto downloading videos from the quick search by their resolution and licensing.
 
+###**Identification of the files to edit**
+After the identification of the feature to implement , it was time to find the source code necessary to edit to introduce the necessary changes for the requested feature.
+
+So as one of the [lead maintainers](https://github.com/yan12125) said in the [issue](https://github.com/rg3/youtube-dl/issues/11457) :
+>youtube-dl's search function is based on YouTube website's. 
+
+So we logically tought that the file required to alter was the [youtube extractor.](https://github.com/rg3/youtube-dl/blob/master/youtube_dl/extractor/youtube.py)
+This file is very content dense so finding if we should create a new class extractor or edit one was hard, but luckily the user that requested the feature mentioned that there was a similar feature already implemented.
+> How to search any videos based on FEATURES filter such as 4K, Creative commons or 3D? i can see youtube-dl has ability to sort by upload date, min view etc but i can't find for features. e.g : **ytsearch:Chritsmas videos :creative commons**
+
+With this we arrived at the following blocks of code 
+```
+class YoutubeSearchIE(SearchInfoExtractor, YoutubePlaylistIE):
+    IE_DESC = 'YouTube.com searches'
+    # there doesn't appear to be a real limit, for example if you search for
+    # 'python' you get more than 8.000.000 results
+    _MAX_RESULTS = float('inf')
+    IE_NAME = 'youtube:search'
+    _SEARCH_KEY = 'ytsearch'
+    _EXTRA_QUERY_ARGS = {}
+    _TESTS = []
+
+    def _get_n_results(self, query, n):
+        """Get a specified number of results for a query"""
+
+        videos = []
+        limit = n
+
+        for pagenum in itertools.count(1):
+            url_query = {
+                'search_query': query.encode('utf-8'),
+                'page': pagenum,
+                'spf': 'navigate',
+            }
+            url_query.update(self._EXTRA_QUERY_ARGS)
+            result_url = 'https://www.youtube.com/results?' + compat_urllib_parse_urlencode(url_query)
+            data = self._download_json(
+                result_url, video_id='query "%s"' % query,
+                note='Downloading page %s' % pagenum,
+                errnote='Unable to download API page')
+            html_content = data[1]['body']['content']
+
+            if 'class="search-message' in html_content:
+                raise ExtractorError(
+                    '[youtube] No video results', expected=True)
+
+            new_videos = self._ids_to_results(orderedSet(re.findall(
+                r'href="/watch\?v=(.{11})', html_content)))
+            videos += new_videos
+            if not new_videos or len(videos) > limit:
+                break
+
+        if len(videos) > n:
+            videos = videos[:n]
+        return self.playlist_result(videos, query)
+
+
+class YoutubeSearchDateIE(YoutubeSearchIE):
+    IE_NAME = YoutubeSearchIE.IE_NAME + ':date'
+    _SEARCH_KEY = 'ytsearchdate'
+    IE_DESC = 'YouTube.com searches, newest videos first'
+    _EXTRA_QUERY_ARGS = {'search_sort': 'video_date_uploaded'}
+```
+
+After analyzing this we learned that the class **YoutubeSearchDateIE** is an extension of the class **YoutubeSearchIE**, and the only differences are the extra arguments .
+
+Now that we pinpointed what to change we can proceed with the implementation of the feature.
+
+----------
+### **Implementation of the feature**
+
+We read through the [**developers instructions**](https://github.com/rg3/youtube-dl#developer-instructions) carefully before starting.
+
+We arrived at a tipping point :
+**1-** we could implement a single class and with regular expressions extract the filters from the arguments.
+**2-** we could create a class for each filter which would result in a different command for each class.
+
+The consensus arrived was that although the correct way to implement this feature was the first one
+with our limited skillset in **python** we decided to implement the alternative option.
+
+This way the resulted code was 
+```
+class YoutubeSearchCCIE(YoutubeSearchIE):
+    IE_NAME = YoutubeSearchIE.IE_NAME + ':creative_commons'
+    _SEARCH_KEY = 'ytsearchcc'
+    IE_DESC = 'YouTube.com searches by creative commons filter'
+    _EXTRA_QUERY_ARGS = {'filters':'creativecommons'}
+
+
+class YoutubeSearch4kIE(YoutubeSearchIE):
+    IE_NAME = YoutubeSearchIE.IE_NAME + ':4k'
+    _SEARCH_KEY = 'ytsearch4k'
+    IE_DESC = 'YouTube.com searches by 4k filter'
+    _EXTRA_QUERY_ARGS = {'filters':'4k'}
+
+class YoutubeSearchHDIE(YoutubeSearchIE):
+    IE_NAME = YoutubeSearchIE.IE_NAME + ':HD'
+    _SEARCH_KEY = 'ytsearchhd'
+    IE_DESC = 'YouTube.com searches by HD filter'
+    _EXTRA_QUERY_ARGS = {'filters':'hd'}
+
+```
+ 
+--------------------
+
+###Pull Request
+
+It was created a pull request to the github project **youtube-dl**. During the implementation of this feature the group was closing monitoring the guidelines, to make sure we followed it. Altough the feature its simple and it could be more efficiently implemented its ready to use .
+
+ 
+
+
+
 
 
 ## Informações
@@ -81,20 +194,20 @@ Scrolling though the issue tracker the process of choosing what to implement was
       Autores:
       
           Bruno Marques (up201405781@fe.up.pt)
-          Número de horas despendidas: 10
-          Contribuição: %
+          Número de horas despendidas: 12
+          Contribuição: 25%
           
           João Ferreira  (j.jofe2@gmail.com)
-          Número de horas despendidas: 10
-          Contribuição: %
+          Número de horas despendidas: 12
+          Contribuição: 25%
           
           Simão Lúcio (simaolucio@gmail.com)
-          Número de horas despendidas: 10
-          Contribuição: %
+          Número de horas despendidas: 12
+          Contribuição: 25%
           
           Vitor Esteves(up201303104@fe.up.pt)
-          Número de horas despendidas: 10
-          Contribuição: %
+          Número de horas despendidas: 12
+          Contribuição: 25%
           
           
 Faculdade de Engenharia da Universidade do Porto - MIEIC
