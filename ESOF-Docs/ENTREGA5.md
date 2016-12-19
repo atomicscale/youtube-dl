@@ -71,9 +71,14 @@ Having loose coupling between top-level components makes it easier to maintain c
 ![couplearch](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images5/couplearch.png)
 
 ###Keep Architecture Components Balanced
+**This was one of the four metrics* Youtube-DL didn't follow.**
 
+ From Better Code Hub's guidelines we could see that keeping a Balanced Component Architecture was a great practice in order to improve **maintainability** this way it would be easier to locate specific bits of code and performing **isolated maintenance**.
+ What defines a well balanced software architecture is to have an optimal number of components (not too many and not too few), and trying to maintain a regular size throughout the components.
+According to Better Code Hub's standards Youtube-DL has an acceptable number of components, however the "Component Size uniformity" is not ideal as we had seen from previous reports, so this way Youtube-DL fails in this metric, not by a big margin but enough to leave some room for improvement. However we also find important to note that this metric should have always been present during project development because at this point it becomes quite difficult to improve it, since it will require such an extensive ammount of work.
 
 ![keeparch](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images5/keeparch.png)
+
 ###Keep Your Codebase Small
 **This was one of the six metrics that Youtube-DL did follow.**
 
