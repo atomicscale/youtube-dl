@@ -73,6 +73,7 @@ Having loose coupling between top-level components makes it easier to maintain c
 ###Keep Architecture Components Balanced
 
 
+![keeparch](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images5/keeparch.png)
 ###Keep Your Codebase Small
 **This was one of the six metrics that Youtube-DL did follow.**
 
