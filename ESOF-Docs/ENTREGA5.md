@@ -208,7 +208,7 @@ class YoutubeSearchHDIE(YoutubeSearchIE):
 
 ###Pull Request
 
-It was created a pull request to the github project **youtube-dl**. During the implementation of this feature the group was closing monitoring the guidelines, to make sure we followed it. Altough the feature its simple and it could be more efficiently implemented its ready to use .
+It was created a [pull request](https://github.com/rg3/youtube-dl/pull/11481) to the github project **youtube-dl**. During the implementation of this feature the group was closing monitoring the guidelines, to make sure we followed it. Altough the feature its simple and it could be more efficiently implemented its ready to use .
 
  
 
