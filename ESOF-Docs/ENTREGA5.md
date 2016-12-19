@@ -12,7 +12,7 @@ In our lectures we studied the importance of software evolution, yet it was inte
 After running the analysis on [Better Code Hub](https://bettercodehub.com) we found it did a pretty good job, obtaining 6 out of 10 on the metric system used.
 This metrics, which will be explained in the following sections, evaluate repository's code quality based on the writing, organization and legibility using a grading system from 0 to 10.
 
-////////////IMAGEM INICIAL BETTERCODE
+![bettercode](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images5/initial.png)
 
 ###Write Short Units of Code
 
@@ -22,7 +22,7 @@ Some of the most important functions on this code, such as Youtube's information
 
 Besides some examples that we can find that are way over the line limit, we still think that, due to Youtube-DL's size and the amount of different contributors, the amount of times this happens is still quite small and we believe this could be easily updated by the main developers.
 
-////////////IMAGEM SHORT UNITS OF CODE
+![shortunits](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images5/shortunits.png)
 
 ###Write Simple Units of Code
 
@@ -30,12 +30,12 @@ Besides some examples that we can find that are way over the line limit, we stil
 
 This metric is based on the Mccabe Code Complexity Metric or [Cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) which measures the number of linearly independent paths through a program's source code.
 
-//IMAGEM SIMPLES UNITS OF CODE
+![simpleunits](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images5/simpleunits.png)
 
 It's easier here to understand why Youtube'DL didn't pass the test.
 If you can look at this segment of code, it's clear that the amount of If's ElIf's and for's here originates a number of branches way over the 5 maximum expected in this metric.
 
-//IMAGEM IF EXTRACTOR
+![extractelif](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images5/extractelif.png)
 
 We also found out that this was a common practice in most extractors but not in the other sections of the code. Again, we little updates here and there we think it would be easy to fix this up.
 
@@ -46,7 +46,7 @@ We also found out that this was a common practice in most extractors but not in 
 Although Better Code Hub did offer us some refactoring candidates, more than 90% of the code is well written and does comply with what is expected.
 Again, most of the information that is duplicated can be found in the extractors and this is due to Youtube-DL's extractor template that most developers use to add new websites.
 
-//IMAGEM WRITE CODE ONCE
+![writecodeonce](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images5/writecodeonce.png)
 
 ###Keep Unit Interfaces Small
 
@@ -54,19 +54,21 @@ Again, most of the information that is duplicated can be found in the extractors
 
 Besides some functions in the InfoExtractor that receive over eight parameters, in the remainder of the code functions only use at most two. This again doesn't violate Better Code Hub's limit number of parameters per unit to at most 4.
 
-//IMAGEM KEEP UNIT INTERFACES SMALL
+![keepunitsmall.png](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images5/keepunitsmall.png)
 
 ###Separate Concerns in Models
 **This was one of the six metrics that Youtube-DL did follow.**
 
 This one was obvious even before we saw the results. The main feature of **Youtube-DL** as a python coding example is its modularity. The extractors, downloaders and other parsers are separated and are independent. This gives the community the ability to add support for more websites easily.
 
+![separateconcerns](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images5/separateconcerns.png)
+
 ###Couple Architecture Components Loosely
 **This was one of the six metrics that Youtube'DL did follow.**
 
 Having loose coupling between top-level components makes it easier to maintain components in isolation, as stated in Better Code Hub guideline. This was accomplished by by minimising the amount of interface code. It is also possible to develop components in isolation, in other words, being able to change only the component itself without changing what you don't want.
 
-//IMAGEM COUPLE ARCH
+![couplearch](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images5/couplearch.png)
 
 ###Keep Architecture Components Balanced
 
@@ -76,21 +78,22 @@ Having loose coupling between top-level components makes it easier to maintain c
 
 As described in Better Code Hub's guideline, "Keeping your codebase small improves maintainability, as it's less work to make structural changes in a smaller codebase". Youtube-DL does follow this guideline and it obtained a 175 man-month result, which is about 14.5 man-years and way less than the 20 man-year limit. A **man-year** is a method of describing the amount of work done by an individual throughout the entire year.
 
-///IMAGEM KEEP YOUR CODEBASE SMALL
+![codebasesmall](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images5/codebasesmall.png)
+
 ###Automate tests
 
 **This was one of the four metrics that Youtube-DL didn't follow.**
 
 For large systems such as Youtube-DL and it's 89,817 lines of code (notice that the large system criteria means more than 10,000 lines of code) the total lines of code should be at least 50% of the total lines of production code. Apparently the lines of test code make up about 4% of the total code, 3,271 lines precisely, which falls short in a huge difference.
 
-//IMAGEM AUTOMATE TESTS
+![automatetests](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images5/automatetests.png)
 
 ###Write Clean Code
 **This was one of the six metrics that Youtube-DL did follow.**
 
 The amount of code smells we can find in Youtube-DL is substantially low, which means the developers did a good job keeping the code structured and organized.
 
-//IMAGEM CLEAN CODE
+![writeclean](https://github.com/atomicscale/youtube-dl/blob/master/ESOF-Docs/images5/writeclean.png)
 
 ## The Feature Evolution Process
 
