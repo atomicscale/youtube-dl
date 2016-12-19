@@ -62,6 +62,11 @@ Besides some functions in the InfoExtractor that receive over eight parameters, 
 This one was obvious even before we saw the results. The main feature of **Youtube-DL** as a python coding example is its modularity. The extractors, downloaders and other parsers are separated and are independent. This gives the community the ability to add support for more websites easily.
 
 ###Couple Architecture Components Loosely
+**This was one of the six metrics that Youtube'DL did follow.**
+
+Having loose coupling between top-level components makes it easier to maintain components in isolation, as stated in Better Code Hub guideline. This was accomplished by by minimising the amount of interface code. It is also possible to develop components in isolation, in other words, being able to change only the component itself without changing what you don't want.
+
+//IMAGEM COUPLE ARCH
 
 ###Keep Architecture Components Balanced
 
