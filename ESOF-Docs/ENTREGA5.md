@@ -57,6 +57,9 @@ Besides some functions in the InfoExtractor that receive over eight parameters, 
 //IMAGEM KEEP UNIT INTERFACES SMALL
 
 ###Separate Concerns in Models
+**This was one of the six metrics that Youtube-DL did follow.**
+
+This one was obvious even before we saw the results. The main feature of **Youtube-DL** as a python coding example is its modularity. The extractors, downloaders and other parsers are separated and are independent. This gives the community the ability to add support for more websites easily.
 
 ###Couple Architecture Components Loosely
 
